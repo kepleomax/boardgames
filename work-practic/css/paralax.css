@@ -1,0 +1,209 @@
+.paralax-wrapper {
+	position: absolute;
+	inset: 0;
+}
+.paralax {
+	width: 100%;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.paralax > div {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: calc(100vw - 8px);
+	height: 100vh;
+	translate: -50% 0;
+	display: flex;
+	justify-content: flex-end;
+	background-size: cover;
+}
+.paralax-inner {
+	width: 235px;
+	position: absolute;
+	display: flex;
+	height: 100%;
+}
+.paralax img {
+	width: 100%;
+}
+.paralax-el-link {
+	position: absolute;
+}
+.paralax-el-link-1 {
+	height: 7%;
+	top: 8.3%;
+	left: 4%;
+	right: 4%;
+}
+.paralax-el-link-2 {
+	height: 7%;
+	top: 23%;
+	left: 4%;
+	right: 4%;
+}
+.paralax-el-link-3 {
+	height: 7%;
+	top: 36.7%;
+	left: 4%;
+	right: 4%;
+}
+.paralax-el-link-4 {
+	height: 7%;
+	top: 51.2%;
+	left: 4%;
+	right: 4%;
+}
+.paralax-el-link-5 {
+	height: 7%;
+	top: 65.7%;
+	left: 4%;
+	right: 4%;
+}
+.paralax-el-link-6 {
+	height: 7%;
+	top: 80%;
+	left: 4%;
+	right: 4%;
+}
+.paralax-el-activelink {
+	height: 10%;
+	translate: 0 -13%;
+	pointer-events: none;
+}
+.paralax-inner img.first {
+	display: inline;
+}
+.paralax-inner img.second {
+	display: none;
+}
+
+#paralax-el-1 > div {
+	background-image: url('../image/background-1/background.png');
+}
+#paralax-el-2 > div {
+	background-image: url('../image/background-2/background.png');
+}
+#paralax-el-3 > div {
+	background-image: url('../image/background-3/background.png');
+}
+#paralax-el-4 > div {
+	background-image: url('../image/background-4/background.png');
+}
+#paralax-el-5 > div {
+	background-image: url('../image/background-5/background.png');
+}
+#paralax-el-6 > div {
+	background-image: url('../image/background-1/background-reverse.png');
+}
+
+@media screen and (max-width: 1660px) {
+	#paralax-el-5 > div {
+		background-image: url('../image/background-5/background-md.png');
+	}
+}
+@media screen and (max-width: 1440px) {
+	.paralax-wrapper {
+		width: 100vw;
+		left: 0;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.paralax-inner img.first {
+		display: none;
+	}
+	.paralax-inner img.second {
+		display: block;
+	}
+	.paralax .paralax-inner::before {
+		height: 620px;
+	}
+	.paralax-inner {
+		width: 140px;
+	}
+	.paralax-el-link-1 {
+		height: 5%;
+		top: 9%;
+	}
+	.paralax-el-link-2 {
+		height: 5%;
+		top: 21%;
+	}
+	.paralax-el-link-3 {
+		height: 5%;
+		top: 32.7%;
+	}
+	.paralax-el-link-4 {
+		height: 5%;
+		top: 46%;
+	}
+	.paralax-el-link-5 {
+		height: 5%;
+		top: 59%;
+	}
+	.paralax-el-link-6 {
+		height: 5%;
+		top: 71.3%;
+	}
+	.paralax-el-activelink {
+		translate: 0 13%;
+	}
+
+	#paralax-el-2 .paralax-el-link-3 {
+		top: 34.7%;
+	}
+	#paralax-el-2 .paralax-el-link-4 {
+		top: 48%;
+	}
+	#paralax-el-2 .paralax-el-link-5 {
+		top: 60%;
+	}
+	#paralax-el-2 .paralax-el-link-6 {
+		top: 73%;
+	}
+
+	#paralax-el-1 .paralax-el-link-1,
+	#paralax-el-6 .paralax-el-link-1 {
+		top: 10%;
+	}
+	#paralax-el-1 .paralax-el-link-2,
+	#paralax-el-6 .paralax-el-link-2 {
+		top: 24.8%;
+	}
+	#paralax-el-1 .paralax-el-link-3,
+	#paralax-el-6 .paralax-el-link-3 {
+		top: 36.5%;
+	}
+	#paralax-el-1 .paralax-el-link-4,
+	#paralax-el-6 .paralax-el-link-4 {
+		top: 48.4%;
+	}
+	#paralax-el-1 .paralax-el-link-5,
+	#paralax-el-6 .paralax-el-link-5 {
+		top: 61%;
+	}
+	#paralax-el-1 .paralax-el-link-6,
+	#paralax-el-6 .paralax-el-link-6 {
+		top: 72.3%;
+	}
+}
+@media screen and (max-width: 600px) {
+	#paralax-el-1 > div {
+		background-image: url('../image/background-1/background-md.png');
+	}
+	#paralax-el-2 > div {
+		background-image: url('../image/background-2/background-md.png');
+	}
+	#paralax-el-3 > div {
+		background-image: url('../image/background-3/background-md.png');
+	}
+	#paralax-el-4 > div {
+		background-image: url('../image/background-4/background-md.png');
+	}
+	#paralax-el-6 > div {
+		background-image: url('../image/background-1/background-md.png');
+	}
+}
